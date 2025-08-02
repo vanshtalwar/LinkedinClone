@@ -2,7 +2,7 @@
 import Navbar from '@/components/Navbar.vue';
 import Left from '@/components/Left.vue'
 import Mid from '@/components/Mid.vue';
-import Right from '@/components/RIght.vue';
+import Right from '@/components/Right.vue';
 import Post from '@/components/Post.vue';
 import { ref } from 'vue'
 const getImageUrl = (path) => {
@@ -20,7 +20,7 @@ const posts = ref([
         content: `Achieved LeetCode 200-day badge. Honed skills in algorithmic paradigms, 
 complexity analysis, and optimized data structure implementation.`,
         tags: ['LeetCode', 'Algorithms', 'DataStructures', 'ProblemSolving', 'SoftwareEngineering'],
-        image: './src/assets/post.jpeg',
+        image: getImageUrl('post.jpeg'),
         likes: ['Aditya Singh', 'User2', 'User3'],
         comments: [
             {
